@@ -1,5 +1,11 @@
 import React from "react";
+import { Link, NavLink } from "react-router-dom";
 import logo from "../../images/Logo.png";
+import "./Navbar.css";
+import { FaFacebookF } from "react-icons/fa";
+import { IoLogoInstagram } from "react-icons/io";
+import { AiFillLinkedin } from "react-icons/ai";
+import { AiFillYoutube } from "react-icons/ai";
 const Navbar = () => {
   return (
     <nav className="mx-44">
@@ -7,45 +13,77 @@ const Navbar = () => {
         <div className="navbar-start">
           <img style={{ width: "170px" }} src={logo} alt="" />
         </div>
-        <div className="navbar-center">
-          <a className="btn btn-ghost normal-case text-xl">daisyUI</a>
+        <div className="navbar-center navbar-list">
+          <NavLink
+            to="/"
+            className="text-base px-3 text-black font-normal rounded-full py-2"
+          >
+            HOME
+          </NavLink>
+          <NavLink
+            to="/services"
+            className="text-base px-3 text-black font-normal rounded-full py-2"
+          >
+            SERVICES
+          </NavLink>
+          <NavLink
+            to="/gallery"
+            className="text-base px-3 text-black font-normal rounded-full py-2"
+          >
+            GALLERY
+          </NavLink>
+          <NavLink
+            to="/news"
+            className="text-base px-3 text-black font-normal rounded-full py-2"
+          >
+            NEWS
+          </NavLink>
+          <NavLink
+            to="/blog"
+            className="text-base px-3 text-black font-normal rounded-full py-2"
+          >
+            BLOG
+          </NavLink>
+          <NavLink
+            to="/about"
+            className="text-base px-3 text-black font-normal rounded-full py-2"
+          >
+            ABOUTUS
+          </NavLink>
+          <Link
+            to="/order"
+            className="text-base px-4 text-black font-normal rounded-full py-2 order-link"
+          >
+            ORDER
+          </Link>
         </div>
         <div className="navbar-end">
-          <button className="btn btn-ghost btn-circle">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="h-5 w-5"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-              />
-            </svg>
-          </button>
-          <button className="btn btn-ghost btn-circle">
-            <div className="indicator">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-5 w-5"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"
-                />
-              </svg>
-              <span className="badge badge-xs badge-primary indicator-item"></span>
-            </div>
-          </button>
+          <div class="vl"></div>
+          <div class="vl ml-5"></div>
+          <div>
+            <FaFacebookF
+              title="Follow on Facebook"
+              className="h-5 w-6 mx-2 text-slate-400 hover:text-black hover:cursor-pointer"
+            />
+          </div>
+          <div>
+            <IoLogoInstagram
+              title="Follow on Instagram"
+              className="h-6 w-6 mx-1 text-slate-400 hover:text-black hover:cursor-pointer"
+            />
+          </div>
+          <div>
+            <AiFillLinkedin
+              title="Follow on Linkedin"
+              className="h-6 w-6 mx-1 text-slate-400 hover:text-black hover:cursor-pointer"
+            />
+          </div>
+          <div>
+            <AiFillYoutube
+              title="Follow on Youtube"
+              className="h-6 w-6 mx-1 text-slate-400 hover:text-black hover:cursor-pointer"
+            />
+          </div>
         </div>
       </div>
     </nav>

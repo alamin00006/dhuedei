@@ -1,10 +1,16 @@
 import React from "react";
-import Navbar from "../Navbar/Navbar";
+import Banner from "../../views/Banner/Banner";
+import ItWorks from "../../views/ItWorks/ItWorks";
 
 const Home = () => {
   return (
-    <div>
-      <Navbar />
+    <div className="mx-44">
+      <section>
+        <Banner />
+      </section>
+      <section>
+        <ItWorks />
+      </section>
     </div>
   );
 };

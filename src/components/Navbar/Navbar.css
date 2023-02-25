@@ -1,0 +1,12 @@
+.navbar-list .active {
+  background-color: #073c62;
+  color: white;
+}
+.order-link {
+  background-color: rgb(32 38 221);
+  color: white;
+}
+.vl {
+  border-left: 2px solid rgb(213, 219, 213);
+  height: 30px;
+}

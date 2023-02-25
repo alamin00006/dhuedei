@@ -1,0 +1,10 @@
+.line {
+  border-left: 6px solid rgb(0, 0, 0);
+  height: 30px;
+}
+/* .step-image img {
+  transition: transform 0.2s;
+}
+.step-image img:hover {
+  transform: scale(1.09);
+} */

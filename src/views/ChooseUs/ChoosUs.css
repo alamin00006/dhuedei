@@ -7,9 +7,9 @@
 .single-choose {
   background-color: #b8dfe6;
 }
-/* .single-choose:hover {
+.single-choose:hover {
   border: 4px solid rgb(89, 89, 89);
-} */
+}
 .choose-title {
   color: #ff9c00;
 }

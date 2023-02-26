@@ -1,0 +1,4 @@
+:where(.collapse > input[type="checkbox"]) {
+  z-index: 0 !important;
+  color: red;
+}

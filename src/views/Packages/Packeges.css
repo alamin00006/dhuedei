@@ -1,0 +1,9 @@
+.packages-image {
+  overflow: hidden;
+}
+.packages-image img {
+  transition: transform 0.2s;
+}
+.packages-image img:hover {
+  transform: scale(1.05);
+}

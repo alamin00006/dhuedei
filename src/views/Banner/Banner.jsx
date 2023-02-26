@@ -16,7 +16,6 @@ import banner3 from "../../images/banner3.jpg";
 const Banner = () => {
   return (
     <div>
-      <hr />
       <div className="mt-10">
         <Swiper
           slidesPerView={1}

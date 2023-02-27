@@ -4,15 +4,6 @@ import { chooses } from "../../fakeData/choose";
 import "./ChoosUs.css";
 
 const ChooseUs = () => {
-  // const [chooses, setChoose] = useState([]);
-  // useEffect(() => {
-  //   fetch("choose.json")
-  //     .then((res) => res.json())
-  //     .then((data) => {
-  //       setChoose(data);
-  //     });
-  // }, []);
-  // console.log(chooses);
   return (
     <div className="mt-12">
       <div className="flex justify-center">

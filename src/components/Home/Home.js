@@ -1,7 +1,7 @@
 import React from "react";
-import AskQuestions from "../../views/AskQuestions/AskQuestions";
+
 import Banner from "../../views/Banner/Banner";
-import BannerNew from "../../views/BannerNew/BannerNew";
+
 import ChooseUs from "../../views/ChooseUs/ChooseUs";
 import FreeQuentlyAsk from "../../views/FreeQuentlyAsk/FreeQuentlyAsk";
 

@@ -13,7 +13,7 @@ const FreeQuentlyAsk = () => {
         </div>
       </div>
       <details className="open:bg-white open:text-rose-500 border-b  open:ring-1 open:ring-black/5 open:shadow-lg p-6 rounded-lg transform-gpu delay-75 duration-100 ease-in-out text-black">
-        <summary className="leading-6 dark:text-white font-semibold select-none text-lg">
+        <summary className="leading-6  font-semibold select-none text-lg">
           কাপড় ধোয়ার দাম কত?
         </summary>
         <div className="mt-3 text-lg leading-6 text-slate-600 dark:text-slate-400 ">
@@ -36,7 +36,7 @@ const FreeQuentlyAsk = () => {
         </div>
       </details>
       <details className="open:bg-white open:text-rose-500 border-b  open:ring-1 open:ring-black/5 open:shadow-lg p-6 rounded-lg transform-gpu delay-75 duration-100 ease-in-out text-black">
-        <summary className="leading-6 dark:text-white font-semibold select-none text-lg">
+        <summary className="leading-6  font-semibold select-none text-lg">
           কত দিনের মধ্যে কাপড় ফেরত দেন?
         </summary>
         <div className="mt-3 text-lg leading-6 text-slate-600 dark:text-slate-400 ">
@@ -49,7 +49,7 @@ const FreeQuentlyAsk = () => {
         </div>
       </details>
       <details className="open:bg-white open:text-rose-500 border-b  open:ring-1 open:ring-black/5 open:shadow-lg p-6 rounded-lg transform-gpu delay-75 duration-100 ease-in-out text-black">
-        <summary className="leading-6 dark:text-white font-semibold select-none text-lg">
+        <summary className="leading-6  font-semibold select-none text-lg">
           মেস থেকে কাপড় নেন না?
         </summary>
         <div className="mt-3 text-lg leading-6 text-slate-600 dark:text-slate-400 ">
@@ -62,7 +62,7 @@ const FreeQuentlyAsk = () => {
         </div>
       </details>
       <details className="open:bg-white open:text-rose-500 border-b  open:ring-1 open:ring-black/5 open:shadow-lg p-6 rounded-lg transform-gpu delay-75 duration-100 ease-in-out text-black">
-        <summary className="leading-6 dark:text-white font-semibold select-none text-lg">
+        <summary className="leading-6  font-semibold select-none text-lg">
           নারীদেরকে সার্ভিস দেন?
         </summary>
         <div className="mt-3 text-lg leading-6 text-slate-600 dark:text-slate-400 ">
@@ -73,7 +73,7 @@ const FreeQuentlyAsk = () => {
         </div>
       </details>
       <details className="open:bg-white open:text-rose-500 border-b  open:ring-1 open:ring-black/5 open:shadow-lg p-6 rounded-lg transform-gpu delay-75 duration-100 ease-in-out text-black">
-        <summary className="leading-6 dark:text-white font-semibold select-none text-lg">
+        <summary className="leading-6  font-semibold select-none text-lg">
           ময়লা কি পরিষ্কার হয়?
         </summary>
         <div className="mt-3 text-lg leading-6 text-slate-600 dark:text-slate-400 ">

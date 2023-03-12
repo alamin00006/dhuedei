@@ -10,7 +10,7 @@ const Services = () => {
       </div>
       <div className="flex justify-center">
         <div>
-          <img src={pricListImg} alt="" />
+          <img className="w-full" src={pricListImg} alt="" />
         </div>
       </div>
     </div>

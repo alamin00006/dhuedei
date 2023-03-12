@@ -13,7 +13,7 @@ const ChooseUs = () => {
           <div class="line ml-3"></div>
         </div>
       </div>
-      <div className="grid grid-cols-3 gap-5 mt-10 text-center choose-us">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mt-10 text-center choose-us">
         {chooses.map((choose) => (
           <div className="single-choose p-5">
             <div className="flex justify-center">

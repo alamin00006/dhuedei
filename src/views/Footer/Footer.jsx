@@ -8,12 +8,12 @@ import { TiLocationArrowOutline } from "react-icons/ti";
 const Footer = () => {
   return (
     <footer className="bg-blue-200	 pt-5 pb-20 mt-10">
-      <div className="flex mx-44">
-        <div>
+      <div className="flex  lg:mx-44 justify-center">
+        <div className="hidden md:block">
           <Map></Map>
         </div>
-        <div className="flex ml-8 text-black">
-          <div>
+        <div className=" flex   ml-8 text-black">
+          <div className="">
             <h2 className="text-2xl font-bold">Quick Links</h2>
             <ul>
               <li className="mt-2">

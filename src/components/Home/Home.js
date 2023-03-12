@@ -7,7 +7,7 @@ import Packages from "../../views/Packages/Packages";
 
 const Home = () => {
   return (
-    <div className="mx-44">
+    <div>
       <section>
         <Banner />
       </section>

@@ -3,11 +3,11 @@ import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
-import "swiper/css";
-import "swiper/css/pagination";
-import "swiper/css/navigation";
-import "swiper/css/autoplay";
-import "./Banner.css";
+// import "swiper/css";
+// import "swiper/css/pagination";
+// import "swiper/css/navigation";
+// import "swiper/css/autoplay";
+// import "./Banner.css";
 // import required modules
 import { Pagination, Navigation, Autoplay } from "swiper";
 import banner1 from "../../images/banner1.jpg";
@@ -31,17 +31,17 @@ const Banner = () => {
         >
           <SwiperSlide>
             <div className="flex justify-center">
-              <img style={{ width: "100%" }} src={banner1} alt="" />
+              <img className="w-full" src={banner1} alt="" />
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div className="flex justify-center">
-              <img style={{ width: "100%" }} src={banner2} alt="" />
+              <img className="w-full" src={banner2} alt="" />
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div className="flex justify-center">
-              <img style={{ width: "100%" }} src={banner3} alt="" />
+              <img className="w-full" src={banner3} alt="" />
             </div>
           </SwiperSlide>
         </Swiper>

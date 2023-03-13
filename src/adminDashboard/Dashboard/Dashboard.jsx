@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link, Outlet, useNavigate } from "react-router-dom";
-import { CgProfile } from "react-icons/cg";
+import { AiOutlineAppstoreAdd } from "react-icons/ai";
 import { FaLaptopHouse, FaUsersCog } from "react-icons/fa";
 import { AiOutlineUnorderedList } from "react-icons/ai";
 import { RiLogoutBoxRFill } from "react-icons/ri";
@@ -66,58 +66,17 @@ const Dashboard = () => {
         </div>
         <div className="drawer-side w-48">
           <label htmlFor="dashboard-drawer" className="drawer-overlay "></label>
-          <ul className="menu p-2 w-80 bg-green-100 space-y-2 ">
-            <li className="Drawer-bg hover:bg-slate-300 border-none  h-10">
-              <Link to="/dashboard">
-                <CgProfile /> Profile
+          <ul className="menu p-2 w-80 space-y-2 ">
+            <li className="Drawer-bg border-none  h-10">
+              <Link to="/dashboard" className="text-black">
+                <AiOutlineAppstoreAdd className="h-6 w-6 text-black" /> Item
+                Manage
               </Link>
             </li>
-            <li className="Drawer-bg hover:bg-slate-300 border-none  h-10">
-              <Link to="item-add">
-                <CgProfile /> Item Add
-              </Link>
-            </li>
-            {/* {user?.role === "Admin" || user?.role === "SuperAdmin" ? (
-                <span>
-                  <li className="Drawer-bg hover:bg-slate-300 h-10">
-                    <Link to="addhouse">
-                      <FaLaptopHouse />
-                      Add House
-                    </Link>
-                  </li>
-                  <li className="Drawer-bg hover:bg-slate-300 h-10">
-                    {" "}
-                    <Link to="addhotel">
-                      <FaLaptopHouse />
-                      Add Hotel
-                    </Link>
-                  </li>
-
-                  <li className="Drawer-bg hover:bg-slate-300 h-10">
-                    <Link to="order">
-                      <AiOutlineUnorderedList />
-                      Orders
-                    </Link>
-                  </li>
-                </span>
-              ) : (
-                ""
-              )}
-
-              {user?.role === "SuperAdmin" ? (
-                <li className="Drawer-bg hover:bg-slate-300 h-10">
-                  <Link to="manage-user">
-                    <FaUsersCog />
-                    Users
-                  </Link>
-                </li>
-              ) : (
-                ""
-              )} */}
 
             <li className="Drawer-bg hover:bg-slate-300 h-10">
-              <Link to="">
-                <RiLogoutBoxRFill />
+              <Link to="" className="text-black">
+                <RiLogoutBoxRFill className="h-6 w-6 text-black" />
                 Logout
               </Link>
             </li>

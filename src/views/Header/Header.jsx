@@ -8,7 +8,7 @@ import "./header.css";
 
 const Header = () => {
   return (
-    <div className="navbar bg-base-100 size m-0 mx-auto sticky top-0 z-50 shadow-lg shadow-white-500/50">
+    <div className="navbar bg-base-100 size   m-0 mx-auto sticky top-0 z-50 shadow-lg shadow-white-500/50">
       <div className="navbar-start">
         <div className="dropdown">
           <label tabIndex={0} className=" lg:hidden">

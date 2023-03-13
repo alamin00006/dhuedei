@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Route, Routes } from "react-router-dom";
 import Dashboard from "./adminDashboard/Dashboard/Dashboard";
 import ItemManage from "./adminDashboard/ItemManage";
+import OrderManage from "./adminDashboard/Order/OrderManage";
 import Home from "./components/Home/Home";
 import Navbar from "./components/Navbar/Navbar";
 import AboutUs from "./views/About/AboutUs";
@@ -30,6 +31,7 @@ function App() {
         <Route path="/order" element={<Order />}></Route>
         <Route path="/dashboard" element={<Dashboard />}>
           <Route index element={<ItemManage></ItemManage>} />
+          <Route path="order-manage" element={<OrderManage></OrderManage>} />
         </Route>
       </Routes>
       <Footer />

@@ -1,4 +1,5 @@
 import React from "react";
+import AddItemTable from "./AddItemTable/AddItemTable";
 import ItemAddModal from "./ItemAddModal";
 
 const ItemManage = () => {
@@ -10,6 +11,7 @@ const ItemManage = () => {
         </label>
       </h1>
       <ItemAddModal />
+      <AddItemTable></AddItemTable>
     </div>
   );
 };

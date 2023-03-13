@@ -14,18 +14,18 @@ const ItWorks = () => {
           <div class="line ml-3"></div>
         </div>
       </div>
-      <div className="grid grid-cols-4 gap-x-5 mt-10 step-image">
+      <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-x-5 mt-10 step-image">
         <div>
-          <img src={step1} alt="" />
+          <img className="mb-4 w-full" src={step1} alt="" />
         </div>
         <div>
-          <img src={step2} alt="" />
+          <img className="mb-4 w-full" src={step2} alt="" />
         </div>
         <div>
-          <img src={step3} alt="" />
+          <img className="mb-4 w-full" src={step3} alt="" />
         </div>
         <div>
-          <img src={step4} alt="" />
+          <img className="mb-4 w-full" src={step4} alt="" />
         </div>
       </div>
     </div>

@@ -11,7 +11,7 @@ const Header = () => {
     <div className="navbar bg-base-100 size   m-0 mx-auto sticky top-0 z-50 shadow-lg shadow-white-500/50">
       <div className="navbar-start">
         <div className="dropdown">
-          <label tabIndex={0} className="btn btn-ghost lg:hidden">
+          <label tabIndex={0} className=" lg:hidden">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-5 w-5"
@@ -61,7 +61,7 @@ const Header = () => {
             </li>
           </ul>
         </div>
-        <Link to="/" className="btn btn-ghost normal-case text-xl">
+        <Link to="/" className=" text-xl">
           <img className="w-28" src={logo} alt="" />
         </Link>
         {/* <a className="btn btn-ghost normal-case text-xl">daisyU</a> */}

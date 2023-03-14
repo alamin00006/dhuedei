@@ -48,7 +48,7 @@ const Order = () => {
                 />
                 <input
                     className="input w-full px-5 my-5  text-black"
-                    type="text"
+                    type="date"
                     name="date"
                     placeholder="Select Date"
                     required

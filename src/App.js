@@ -10,10 +10,12 @@ import CopyRight from "./views/CopyRight/CopyRight";
 import Footer from "./views/Footer/Footer";
 import Gallery from "./views/Gallery/Gallery";
 import Header from "./views/Header/Header";
+import Login from "./views/Login/Login";
 
 import News from "./views/News/News";
 import Order from "./views/Order/Order";
 import Services from "./views/Services/Services";
+import SignUp from "./views/SignUp/SignUp";
 
 function App() {
   return (
@@ -28,6 +30,8 @@ function App() {
         <Route path="/blog" element={<Blog />}></Route>
         <Route path="/about" element={<AboutUs />}></Route>
         <Route path="/order" element={<Order />}></Route>
+        <Route path="/singUp" element={<SignUp />}></Route>
+        <Route path="/login" element={<Login />}></Route>
         <Route path="/dashboard" element={<Dashboard />}>
           <Route index element={<ItemManage></ItemManage>} />
         </Route>

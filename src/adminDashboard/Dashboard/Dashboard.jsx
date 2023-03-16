@@ -1,58 +1,63 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Link, Outlet, useNavigate } from "react-router-dom";
 import { AiOutlineAppstoreAdd } from "react-icons/ai";
-import { FaLaptopHouse, FaUsersCog } from "react-icons/fa";
-import { AiOutlineUnorderedList } from "react-icons/ai";
 import { RiLogoutBoxRFill } from "react-icons/ri";
-// import "./Dashboard.css";
-// import { useQuery } from "react-query";
-// import axios from "axios";
+
+import { useQuery } from "react-query";
+import axios from "axios";
+import Loading from "../../views/Loading/Loading";
 
 const Dashboard = () => {
   const navigate = useNavigate();
 
-  //   const [user, setUser] = useState({});
-  //   const token = localStorage.getItem("token");
-
-  //   const { isLoading, refetch } = useQuery([token], () => {
-  //     async function getUser() {
-  //       if (!token) {
-  //         return navigate("/");
-  //       } else {
-  //         await axios
-  //           .get(
-  //             "https://all-assistant-server.onrender.com/api/v1/user/me",
-  //             {
-  //               headers: {
-  //                 Authorization: `Bearer ${token}`,
-  //               },
-  //             },
-  //             {
-  //               refetchInterval: 6000,
-  //             }
-  //           )
-  //           .then((data) => {
-  //             setUser(data?.data?.data);
-  //             refetch();
-  //           })
-  //           .catch((err) => {
-  //             localStorage.removeItem("token");
-  //             navigate("/login");
-  //           });
-  //       }
-  //     }
-  //     getUser();
-  //   });
-
-  //   const SingOutHandle = () => {
-  //     navigate("/");
-  //     localStorage.removeItem("token");
-  //     window.location.reload(false);
-  //   };
-
-  //   if (isLoading) {
-  //     return <Loading></Loading>;
+  const [user, setUser] = useState({});
+  const token = localStorage.getItem("token");
+  // useEffect(() => {
+  //   if (!user.role === "Admin") {
+  //     return navigate("/");
   //   }
+  // }, [token, user, navigate]);
+
+  const { isLoading, refetch } = useQuery([token], () => {
+    async function getUser() {
+      if (!token) {
+        return navigate("/");
+      } else {
+        await axios
+          .get(
+            "http://localhost:5000/api/v1/user/me",
+            {
+              headers: {
+                Authorization: `Bearer ${token}`,
+              },
+            },
+            {
+              refetchInterval: 6000,
+            }
+          )
+          .then((data) => {
+            setUser(data?.data?.data);
+            refetch();
+          })
+          .catch((err) => {
+            localStorage.removeItem("token");
+            navigate("/login");
+          });
+      }
+    }
+    getUser();
+  });
+
+  const SingOutHandle = () => {
+    navigate("/");
+    localStorage.removeItem("token");
+    window.location.reload(false);
+  };
+
+  if (isLoading) {
+    return <Loading></Loading>;
+  }
+
   return (
     <div className="lg:mx-44">
       <div className="drawer drawer-mobile">
@@ -75,7 +80,7 @@ const Dashboard = () => {
             </li>
 
             <li className="Drawer-bg hover:bg-slate-300 h-10">
-              <Link to="" className="text-black">
+              <Link onClick={SingOutHandle} to="" className="text-black">
                 <RiLogoutBoxRFill className="h-6 w-6 text-black" />
                 Logout
               </Link>

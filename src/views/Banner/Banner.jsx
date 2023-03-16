@@ -2,12 +2,14 @@ import React from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 
+
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import "swiper/css/autoplay";
 import "./Banner.css";
+
 // import required modules
 import { Pagination, Navigation, Autoplay } from "swiper";
 import banner1 from "../../images/banner1.jpg";

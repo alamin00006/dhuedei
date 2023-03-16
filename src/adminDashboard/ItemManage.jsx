@@ -1,7 +1,10 @@
 import React from "react";
+import useItems from "../hooks/useItems";
+import AddItemTable from "./AddItemTable/AddItemTable";
 import ItemAddModal from "./ItemAddModal";
 
 const ItemManage = () => {
+  const [items, refetch] = useItems();
   return (
     <div>
       <h1>
@@ -12,7 +15,8 @@ const ItemManage = () => {
           ITEM ADD
         </label>
       </h1>
-      <ItemAddModal />
+      <ItemAddModal refetch={refetch} />
+      <AddItemTable></AddItemTable>
     </div>
   );
 };

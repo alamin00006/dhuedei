@@ -55,7 +55,7 @@ const Navbar = () => {
             </NavLink>
             <Link
               to="/order"
-              className=" px-4 bg-rose-500 text-white font-normal rounded-full py-2"
+              className=" px-4  text-white font-normal rounded-full py-2"
             >
               ORDER
             </Link>

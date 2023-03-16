@@ -2,7 +2,8 @@ import axios from "axios";
 import React, { useState } from "react";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-const ItemAddModal = () => {
+
+const ItemAddModal = ({ refetch }) => {
   const handleNewItem = async (e) => {
     e.preventDefault();
 
@@ -18,8 +19,9 @@ const ItemAddModal = () => {
         "http://localhost:5000/api/v1/item",
         productAdd
       );
-      // refetch()
+
       toast.success(data.data.message);
+      refetch();
     } catch (error) {
       console.log(error);
       return toast.warn(error.response.data.message);

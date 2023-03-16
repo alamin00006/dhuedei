@@ -6,14 +6,16 @@ import { RiLogoutBoxRFill } from "react-icons/ri";
 import { useQuery } from "react-query";
 import axios from "axios";
 import Loading from "../../views/Loading/Loading";
+import { FaCartArrowDown } from "react-icons/fa";
 
 const Dashboard = () => {
   const navigate = useNavigate();
 
   const [user, setUser] = useState({});
   const token = localStorage.getItem("token");
+
   // useEffect(() => {
-  //   if (!user.role === "Admin") {
+  //   if (user.role === "User") {
   //     return navigate("/");
   //   }
   // }, [token, user, navigate]);
@@ -76,6 +78,11 @@ const Dashboard = () => {
               <Link to="/dashboard" className="text-black">
                 <AiOutlineAppstoreAdd className="h-6 w-6 text-black" /> Item
                 Manage
+              </Link>
+            </li>
+            <li className="Drawer-bg border-none  h-10">
+              <Link to="order-manage" className="text-black">
+                <FaCartArrowDown className="h-6 w-6 text-black" /> Orders Manage
               </Link>
             </li>
 

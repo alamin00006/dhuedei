@@ -2,9 +2,12 @@ import React from "react";
 import { AiOutlineEye } from "react-icons/ai";
 import { FiEdit } from "react-icons/fi";
 import { RiDeleteBin6Line } from "react-icons/ri";
+import useItems from "../../hooks/useItems";
 import "./AddTable.css";
 
 const AddItemTable = () => {
+  const [items, refetch] = useItems();
+  console.log(items);
   return (
     <div className="overflow-x-auto">
       <table className="table w-full border-solid border-2 border-black text-black">

@@ -1,0 +1,8 @@
+.signup-part {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bg-login-info {
+  background-color: #12856a;
+}

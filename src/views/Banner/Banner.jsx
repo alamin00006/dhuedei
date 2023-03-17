@@ -2,7 +2,6 @@ import React from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 
-
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
@@ -12,9 +11,9 @@ import "./Banner.css";
 
 // import required modules
 import { Pagination, Navigation, Autoplay } from "swiper";
-import banner1 from "../../images/banner1.jpg";
-import banner2 from "../../images/banner2.jpg";
-import banner3 from "../../images/banner3.jpg";
+import banner1 from "../../images/banner1.png";
+import banner2 from "../../images/banner2.png";
+
 const Banner = () => {
   return (
     <div>
@@ -39,11 +38,6 @@ const Banner = () => {
           <SwiperSlide>
             <div className="flex justify-center">
               <img className="w-full" src={banner2} alt="" />
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="flex justify-center">
-              <img className="w-full" src={banner3} alt="" />
             </div>
           </SwiperSlide>
         </Swiper>

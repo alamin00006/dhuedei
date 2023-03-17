@@ -2,7 +2,7 @@ import React from "react";
 
 const PriceTable = ({ itmes }) => {
   const services = itmes?.data;
-  console.log(services);
+  // console.log(services);
   return (
     <div className="overflow-x-auto">
       <table className="table w-full">

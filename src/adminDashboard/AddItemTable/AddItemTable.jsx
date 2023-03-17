@@ -5,9 +5,9 @@ import { RiDeleteBin6Line } from "react-icons/ri";
 import useItems from "../../hooks/useItems";
 import "./AddTable.css";
 
-const AddItemTable = () => {
-  const [items, refetch] = useItems();
-  console.log(items);
+const AddItemTable = ({ items }) => {
+  const addItems = items?.data;
+  console.log(addItems);
   return (
     <div className="overflow-x-auto">
       <table className="table w-full border-solid border-2 border-black text-black">
@@ -23,42 +23,35 @@ const AddItemTable = () => {
           </tr>
         </thead>
         <tbody>
-          {/* row 1 */}
-          <tr>
-            <th>1</th>
-            <td>Cy Ganderton</td>
-            <td>Quality Control Specialist</td>
-            <td>Blue</td>
-            <td>Blue</td>
-            <td>
-              <div className="flex space-x-4">
-                <div>
-                  <label htmlFor="view-house-modal" className="">
-                    <AiOutlineEye className="h-6 w-6 cursor-pointer" />
-                  </label>
-                </div>
-                <div>
-                  <label htmlFor="edit-modal" className="">
-                    <FiEdit className="h-6 w-6 cursor-pointer" />
-                  </label>
-                </div>
+          {addItems.map((item, index) => (
+            <tr key={item._id}>
+              <th>{index + 1}</th>
+              <td>{item?.itemName}</td>
+              <td>{item?.ironPerPrice}</td>
+              <td>{item?.washPerPrice}</td>
+              <td>{item?.dryCleanPerPrice}</td>
+              <td>
+                <div className="flex space-x-4">
+                  <div>
+                    <label htmlFor="view-house-modal" className="">
+                      <AiOutlineEye className="h-6 w-6 cursor-pointer" />
+                    </label>
+                  </div>
+                  <div>
+                    <label htmlFor="edit-modal" className="">
+                      <FiEdit className="h-6 w-6 cursor-pointer" />
+                    </label>
+                  </div>
 
-                <div>
-                  <label htmlFor="deletemodal" className="">
-                    <RiDeleteBin6Line className="h-6 w-6 cursor-pointer" />
-                  </label>
+                  <div>
+                    <label htmlFor="deletemodal" className="">
+                      <RiDeleteBin6Line className="h-6 w-6 cursor-pointer" />
+                    </label>
+                  </div>
                 </div>
-              </div>
-            </td>
-          </tr>
-          {/* row 2 */}
-          <tr>
-            <th>2</th>
-            <td>Hart Hagerty</td>
-            <td>Desktop Support Technician</td>
-            <td>Purple</td>
-            <td>Purple</td>
-          </tr>
+              </td>
+            </tr>
+          ))}
         </tbody>
       </table>
     </div>

@@ -5,6 +5,7 @@ import ItemAddModal from "./ItemAddModal";
 
 const ItemManage = () => {
   const [items, refetch] = useItems();
+  console.log(items);
   return (
     <div>
       <h1>
@@ -16,7 +17,7 @@ const ItemManage = () => {
         </label>
       </h1>
       <ItemAddModal refetch={refetch} />
-      <AddItemTable></AddItemTable>
+      <AddItemTable items={items}></AddItemTable>
     </div>
   );
 };

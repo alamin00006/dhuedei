@@ -5,6 +5,7 @@ import PriceTable from "../PriceTable/PriceTable";
 import useItems from "../../hooks/useItems";
 const Services = () => {
   const [itmes, refetch, isLoading] = useItems();
+
   // console.log(itmes);
   return (
     <div className="w-4/5 m-0 mx-auto">

@@ -3,7 +3,7 @@ import { AiFillLinkedin, AiFillYoutube } from "react-icons/ai";
 import { FaFacebookF } from "react-icons/fa";
 import { IoLogoInstagram } from "react-icons/io";
 import { Link, NavLink } from "react-router-dom";
-import logo from "../../images/logo.png";
+import logo from "../../images/Logo.png";
 import "./header.css";
 
 const Header = () => {

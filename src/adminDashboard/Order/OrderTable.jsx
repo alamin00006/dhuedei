@@ -4,7 +4,7 @@ import { RiDeleteBin6Line } from "react-icons/ri";
 
 const OrderTable = ({ orders }) => {
   const adminOrders = orders?.data;
-  console.log(adminOrders);
+  // console.log(adminOrders);
   return (
     <div className="overflow-x-auto">
       <table className="table w-full border-solid border-2 border-black text-black">

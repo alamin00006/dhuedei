@@ -64,7 +64,7 @@ const SignUp = () => {
     e.preventDefault();
 
     axios
-      .post("http://localhost:5000/api/v1/user/signup", {
+      .post("https://dhuenin-server-side.onrender.com/api/v1/user/signup", {
         name: name,
         email: userInfo?.email,
         password: userInfo?.password,

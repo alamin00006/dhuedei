@@ -53,10 +53,13 @@ const Login = () => {
     e.preventDefault();
 
     try {
-      const data = await axios.post("http://localhost:5000/api/v1/user/login", {
-        email: userInfo?.email,
-        password: userInfo?.password,
-      });
+      const data = await axios.post(
+        "https://dhuenin-server-side.onrender.com/api/v1/user/login",
+        {
+          email: userInfo?.email,
+          password: userInfo?.password,
+        }
+      );
       localStorage.setItem("token", data?.data?.data?.token);
       navigate("/dashboard");
     } catch (error) {

@@ -6,7 +6,7 @@ const useItems = () => {
     isLoading,
     refetch,
   } = useQuery([], () =>
-    fetch("http://localhost:5000/api/v1/item", {
+    fetch("https://dhuenin-server-side.onrender.com/api/v1/item", {
       method: "GET",
     }).then((res) => res.json())
   );

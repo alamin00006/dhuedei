@@ -8,9 +8,7 @@ const OrderManage = () => {
   return (
     <div>
       <h1>Our Orders</h1>
-      <div>
-        <OrderTable orders={orders}></OrderTable>
-      </div>
+      <div>{orders ? <OrderTable orders={orders}></OrderTable> : <></>}</div>
     </div>
   );
 };

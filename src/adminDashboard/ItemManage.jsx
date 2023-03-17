@@ -17,7 +17,7 @@ const ItemManage = () => {
         </label>
       </h1>
       <ItemAddModal refetch={refetch} />
-      <AddItemTable items={items}></AddItemTable>
+      {items ? <AddItemTable items={items}></AddItemTable> : <></>}
     </div>
   );
 };

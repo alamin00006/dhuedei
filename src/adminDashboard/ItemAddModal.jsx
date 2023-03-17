@@ -16,7 +16,7 @@ const ItemAddModal = ({ refetch }) => {
 
     try {
       const data = await axios.post(
-        "http://localhost:5000/api/v1/item",
+        "https://dhuenin-server-side.onrender.com/api/v1/item",
         productAdd
       );
 

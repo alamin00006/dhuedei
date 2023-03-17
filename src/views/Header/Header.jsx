@@ -3,7 +3,7 @@ import { AiFillLinkedin, AiFillYoutube } from "react-icons/ai";
 import { FaFacebookF } from "react-icons/fa";
 import { IoLogoInstagram } from "react-icons/io";
 import { Link, NavLink } from "react-router-dom";
-import logo from "../../images/Logo.png";
+import logo from "../../images/logo.png";
 import "./header.css";
 
 const Header = () => {
@@ -63,7 +63,7 @@ const Header = () => {
             </ul>
           </div>
           <Link to="/" className=" text-xl">
-            <img className="w-28" src={logo} alt="" />
+            <img className="w-32" src={logo} alt="" />
           </Link>
           {/* <a className="btn btn-ghost normal-case text-xl">daisyU</a> */}
         </div>

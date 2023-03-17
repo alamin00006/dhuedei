@@ -27,7 +27,7 @@ const Dashboard = () => {
       } else {
         await axios
           .get(
-            "http://localhost:5000/api/v1/user/me",
+            "https://dhuenin-server-side.onrender.com/api/v1/user/me",
             {
               headers: {
                 Authorization: `Bearer ${token}`,

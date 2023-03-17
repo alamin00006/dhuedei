@@ -14,7 +14,7 @@ const Order = () => {
     };
     try {
       const { data } = await axios.post(
-        `http://localhost:5000/api/v1/order`,
+        `https://dhuenin-server-side.onrender.com/api/v1/order`,
         orderData
       );
 

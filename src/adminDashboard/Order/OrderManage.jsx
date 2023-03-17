@@ -4,12 +4,12 @@ import OrderTable from "./OrderTable";
 
 const OrderManage = () => {
   const [orders] = useOrders();
-  console.log(orders);
+  // console.log(orders);
   return (
     <div>
       <h1>Our Orders</h1>
       <div>
-        <OrderTable></OrderTable>
+        <OrderTable orders={orders}></OrderTable>
       </div>
     </div>
   );

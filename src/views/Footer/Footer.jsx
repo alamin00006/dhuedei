@@ -50,7 +50,7 @@ const Footer = () => {
               <div>
                 <FaHandsHelping className="w-5 h-5" />
               </div>
-              <p className="ml-1 font-normal">support@dhuedei.com</p>
+              <p className="ml-1 font-normal">nazmulhasanall92@gmail.com</p>
             </div>
             <div className="flex mt-2">
               <div>

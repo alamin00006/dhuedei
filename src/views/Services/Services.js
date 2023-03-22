@@ -10,9 +10,9 @@ const Services = () => {
   console.log(itmes);
   return (
     <div className="w-4/5 m-0 mx-auto">
-      <h1 className="text-3xl text-cyan-500 font-bold">Services & Pricing</h1>
+    
       <div className="divider before:bg-cyan-500 after:bg-cyan-500 mt-8 font-bold text-xl text-cyan-600">
-        Price Table
+      Services &  Price Table
       </div>
       <div className="flex justify-center">
         {/* <div>

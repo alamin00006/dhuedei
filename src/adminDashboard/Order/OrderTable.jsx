@@ -7,7 +7,7 @@ const OrderTable = ({ orders }) => {
   // console.log(adminOrders);
   return (
     <div className="overflow-x-auto">
-      <table className="table w-full border-solid border-2 border-black text-black">
+      <table className="table w-full border-solid border-2 border-black text-black m-32">
         {/* head */}
         <thead>
           <tr className="text-white">

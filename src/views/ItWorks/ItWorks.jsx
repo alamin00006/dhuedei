@@ -1,9 +1,9 @@
 import React from "react";
 import "./ItWorks.css";
-import step1 from "../../images/Step-1.jpg";
-import step2 from "../../images/Step-2.jpg";
-import step3 from "../../images/Step-3.jpg";
-import step4 from "../../images/Step-4.jpg";
+import step1 from "../../images/Step-1.JPG";
+import step2 from "../../images/Step-2.JPG";
+import step3 from "../../images/Step-3.JPG";
+import step4 from "../../images/Step-4.JPG";
 const ItWorks = () => {
   return (
     <div className="mt-12">

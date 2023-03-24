@@ -2,7 +2,7 @@ import React from "react";
 import { Link, useNavigate } from "react-router-dom";
 import p1 from "../../assets/Blog/1-300x200.jpg"
 import p2 from "../../assets/Blog/4-300x200.jpg"
-import p3 from "../../assets/Blog/5-300x200.jpg"
+import p3 from "../../assets/Blog/5-300x200.JPG"
 import p4 from "../../assets/Blog/6-300x200.jpg"
 
 const Blog = () => {

@@ -91,7 +91,7 @@ const Header = () => {
             </ul>
           </div>
           <Link to="/" className=" text-xl">
-            <img className="w-32" src={logo} alt="" />
+            <img className="w-28 h-21" src={logo} alt="" />
           </Link>
           {/* <a className="btn btn-ghost normal-case text-xl">daisyU</a> */}
         </div>

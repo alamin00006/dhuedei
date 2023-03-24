@@ -44,7 +44,7 @@ const Footer = () => {
               <div>
                 <HiDevicePhoneMobile className="h-5 w-5" />
               </div>
-              <p className="ml-1 font-normal">+8801645-16565</p>
+              <p className="ml-1 font-normal">+8801886209320</p>
             </div>
             <div className="flex mt-2 items-center">
               <div>

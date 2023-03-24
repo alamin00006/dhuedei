@@ -1,16 +1,21 @@
-import React from "react";
+import React, { useState } from "react";
 import { AiOutlineEye } from "react-icons/ai";
 import { FiEdit } from "react-icons/fi";
 import { RiDeleteBin6Line } from "react-icons/ri";
 import useItems from "../../hooks/useItems";
 import "./AddTable.css";
+import ItemEditModal from "./ItemEditModal/ItemEditModal";
 
-const AddItemTable = ({ items }) => {
+const AddItemTable = () => {
+  const [items, refetch] = useItems();
+  const [editItem, setEditItem] = useState({});
+  const [detailsItem, setDetailsItem] = useState({});
+  const [deleteItem, setDeleteItem] = useState({});
   const addItems = items?.data;
   console.log(addItems);
   return (
-    <div className="overflow-x-auto">
-      <table className="table w-full border-solid border-2 border-black text-black">
+    <div className="overflow-x-auto ">
+      <table className="table w-full border-solid border-2 border-black text-black scroll-mt-px">
         {/* head */}
         <thead>
           <tr className="text-white">
@@ -32,13 +37,13 @@ const AddItemTable = ({ items }) => {
               <td>{item?.dryCleanPerPrice}</td>
               <td>
                 <div className="flex space-x-4">
-                  <div>
-                    <label htmlFor="view-house-modal" className="">
+                  <div onClick={()=>setDetailsItem(item)}>
+                    <label htmlFor="view-item-modal" className="">
                       <AiOutlineEye className="h-6 w-6 cursor-pointer" />
                     </label>
                   </div>
-                  <div>
-                    <label htmlFor="edit-modal" className="">
+                  <div onClick={()=>setEditItem(item)}>
+                    <label htmlFor="my-modal-6" className="">
                       <FiEdit className="h-6 w-6 cursor-pointer" />
                     </label>
                   </div>
@@ -52,6 +57,8 @@ const AddItemTable = ({ items }) => {
               </td>
             </tr>
           ))}
+           <ItemEditModal refetch={refetch} editHotel={editItem} />
+             
         </tbody>
       </table>
     </div>

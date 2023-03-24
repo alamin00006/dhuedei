@@ -67,13 +67,13 @@ const Login = () => {
     }
   };
 
-  useEffect(() => {
-    if (!user?.email) {
-      refetch();
-    } else {
-      navigate("/");
-    }
-  }, [refetch, token, user, isLoading, navigate]);
+  // useEffect(() => {
+  //   if (!user?.email) {
+  //     refetch();
+  //   } else {
+  //     navigate("/");
+  //   }
+  // }, [refetch, token, user, isLoading, navigate]);
   if (isLoading) {
     return <Loading></Loading>;
   }

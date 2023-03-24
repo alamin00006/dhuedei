@@ -1,7 +1,8 @@
 import React from "react";
-import PriceTable from "../PriceTable/PriceTable";
+
 import axios from "axios";
 import { toast, ToastContainer } from "react-toastify";
+import Services from "../Services/Services";
 const Order = () => {
   const handleOrderSubmit = async (event) => {
     event.preventDefault();
@@ -76,11 +77,9 @@ const Order = () => {
       </div>
       <div>
         <div className="w-4/5 m-0 mx-auto">
-          <div className="divider before:bg-cyan-500 after:bg-cyan-500 mt-8 font-bold text-xl text-cyan-600">
-            Price Table
-          </div>
+          
           <div className="flex justify-center"></div>
-          <PriceTable></PriceTable>
+         <Services/>
         </div>
       </div>
       <ToastContainer />

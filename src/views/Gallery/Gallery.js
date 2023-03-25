@@ -12,7 +12,7 @@ const Gallery = () => {
         <span className="border px-5 py-3">GALLERY</span>
       </div>
 
-      <div><h1 className='text-center m-10'>Comming Soon....</h1></div>
+      <div><h1 className='text-center m-10 text-black'>Comming Soon....</h1></div>
     <div>
     <div className="relative w-full flex gap-4 py-6 ">
 

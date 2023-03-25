@@ -77,7 +77,7 @@ const Header = () => {
                   to="/about"
                   className="text-base px-3 text-black font-normal rounded-full py-2"
                 >
-                  ABOUTUS
+                  ABOUT US
                 </Link>
               </li>
               <li>
@@ -142,7 +142,7 @@ const Header = () => {
                 to="/about"
                 className="text-base px-3 text-black font-normal rounded-full py-2"
               >
-                ABOUTUS
+                ABOUT US
               </NavLink>
             </li>
             <li>

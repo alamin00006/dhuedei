@@ -89,7 +89,7 @@ const Login = () => {
                 </label>
                 <input
                   onChange={emailCheck}
-                  className="block border-2 pl-2 mt-2"
+                  className="block border-2 pl-2 mt-2 text-black"
                   placeholder="Enter Your Email"
                   type="email"
                   name="email"
@@ -106,7 +106,7 @@ const Login = () => {
                 </label>
                 <input
                   onChange={passwordCheck}
-                  className="block border-2 pl-2 mt-2"
+                  className="block border-2 pl-2 mt-2 text-black"
                   type="password"
                   placeholder="Enter Your Password"
                   name="password"
@@ -116,11 +116,8 @@ const Login = () => {
                 {error?.passWordError && (
                   <p className="text-rose-500">{error.passWordError}</p>
                 )}
-                <input
-                  className="bg-rose-500 text-xl text-white rounded border-0 py-2 mt-2 cursor-pointer"
-                  type="submit"
-                  value="Login"
-                />
+              
+                <button className="bg-rose-500 text-xl text-white rounded border-0 px-5 py-2 mt-2 cursor-pointer" type="submit">Login</button>
               </div>
             </form>
           </div>

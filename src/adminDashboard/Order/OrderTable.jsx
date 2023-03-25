@@ -4,18 +4,17 @@ import { RiDeleteBin6Line } from "react-icons/ri";
 import OrderDeleteModal from "./OrderDeleteModal/OrderDeleteModal";
 import OrderViewModal from "./orderViewModal/OrderViewModal";
 
-const OrderTable = ({ orders,refetch }) => {
+const OrderTable = ({ orders, refetch }) => {
   const [orderView, setOrderView] = useState({});
   const [orderDelete, setOrderDelete] = useState({});
   const adminOrders = orders?.data;
   // console.log(orderDelete);
   return (
     <div className="">
-      <table className="table border-solid border-2 border-black text-black">
+      <table className="table w-full border-solid border-2 border-black text-black">
         {/* head */}
         <thead>
           <tr className="text-white">
-            
             <th>No</th>
             <th>Name</th>
             <th>Phone Number</th>
@@ -49,7 +48,10 @@ const OrderTable = ({ orders,refetch }) => {
           ))}
 
           <OrderViewModal orderView={orderView}></OrderViewModal>
-          <OrderDeleteModal orderDelete={orderDelete} refetch={refetch}></OrderDeleteModal>
+          <OrderDeleteModal
+            orderDelete={orderDelete}
+            refetch={refetch}
+          ></OrderDeleteModal>
         </tbody>
       </table>
     </div>

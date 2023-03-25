@@ -154,7 +154,15 @@ const Header = () => {
             </li>
           </ul>
         </div>
-        <div className="navbar-end">
+        <div className="navbar-end ">
+          <div className="lg:hidden">
+            <Link
+              to="/order"
+              className=" px-4 bg-rose-500 text-white font-normal rounded-full py-2"
+            >
+              ORDER
+            </Link>
+          </div>
           <div class="vl"></div>
           <div class="vl ml-5"></div>
           <div>

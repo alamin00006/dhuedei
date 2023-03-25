@@ -1,5 +1,6 @@
 import React from "react";
 import useOrders from "../../hooks/useOrders";
+import Loading from "../../views/Loading/Loading";
 import OrderTable from "./OrderTable";
 
 const OrderManage = () => {
@@ -8,7 +9,13 @@ const OrderManage = () => {
   return (
     <div>
       <h1>Our Orders</h1>
-      <div>{orders ? <OrderTable orders={orders}></OrderTable> : <></>}</div>
+      <div>
+        {orders ? (
+          <OrderTable orders={orders}></OrderTable>
+        ) : (
+          <Loading></Loading>
+        )}
+      </div>
     </div>
   );
 };

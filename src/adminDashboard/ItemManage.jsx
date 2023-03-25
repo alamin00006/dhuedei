@@ -1,5 +1,6 @@
 import React from "react";
 import useItems from "../hooks/useItems";
+import Loading from "../views/Loading/Loading";
 import AddItemTable from "./AddItemTable/AddItemTable";
 import ItemAddModal from "./ItemAddModal";
 
@@ -17,7 +18,11 @@ const ItemManage = () => {
         </label>
       </h1>
       <ItemAddModal refetch={refetch} />
-      {items ? <AddItemTable items={items}></AddItemTable> : <></>}
+      {items ? (
+        <AddItemTable items={items}></AddItemTable>
+      ) : (
+        <Loading></Loading>
+      )}
     </div>
   );
 };

@@ -72,14 +72,14 @@ const Header = () => {
                   BLOG
                 </Link>
               </li>
-              <li>
+              {/* <li>
                 <Link
                   to="/about"
                   className="text-base px-3 text-black font-normal rounded-full py-2"
                 >
                   ABOUTUS
                 </Link>
-              </li>
+              </li> */}
               <li>
                 <Link
                   to="/order"
@@ -137,14 +137,14 @@ const Header = () => {
                 BLOG
               </NavLink>
             </li>
-            <li>
+            {/* <li>
               <NavLink
                 to="/about"
                 className="text-base px-3 text-black font-normal rounded-full py-2"
               >
                 ABOUTUS
               </NavLink>
-            </li>
+            </li> */}
             <li>
               <Link
                 to="/order"

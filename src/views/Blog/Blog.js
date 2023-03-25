@@ -2,7 +2,7 @@ import React from "react";
 import { Link, useNavigate } from "react-router-dom";
 import p1 from "../../assets/Blog/1-300x200.jpg"
 import p2 from "../../assets/Blog/4-300x200.jpg"
-import p3 from "../../assets/Blog/5-300x200.jpg"
+import p3 from "../../assets/Blog/5-300x200.JPG"
 import p4 from "../../assets/Blog/6-300x200.jpg"
 
 const Blog = () => {
@@ -36,16 +36,17 @@ const Blog = () => {
               className="object-cover object-center w-full rounded-md h-72 dark:bg-gray-500"
             />
             <div className="mt-6 mb-2">
-              <span className="block text-xs font-medium tracking-widest uppercase text-amber-300">
-                <Link to="/blogOne"> কাপড়ের দুর্গন্ধ </Link>
+              <span className="block text-xs font-medium tracking-widest uppercase text-green-600">
+                <Link to="/blogOne"> সহজে কাপড়ের  </Link>
               </span>
-              <h2 className="text-xl text-amber-300 font-semibold tracking-wide">
-                <Link to="/blogOne"> দূর করার সহজ উপায় </Link>
+              <h2 className="text-xl text-green-600 font-semibold tracking-wide">
+                <Link to="/blogOne"> দুর্গন্ধ দূর করার উপায় </Link>
               </h2>
             </div>
             <p className="text-black">
-              আমাদের প্রতিদিনই কাপড় ধোয়ার মতো সময় থাকে না। যদি কাপড় ধোয়া ছাড়াই
-              দুর্গন্ধ দূর করা যায়? আছে সহজ উপায় !
+            কাপড় ধোয়ার মত সময় আমাদের প্রায় প্রতিদিন থাকে না।
+            কাপড় ধোয়া ছাড়াই দুর্গন্ধ দূর করার উপায় আছে কি?
+            হ্যাঁ ধুয়ে নিনে আছে সহজ উপায় !
             </p>
           </div>
 
@@ -57,15 +58,15 @@ const Blog = () => {
               className="object-cover object-center w-full rounded-md h-72 dark:bg-gray-500"
             />
             <div className="mt-6 mb-2">
-              <span className="block text-xs font-medium tracking-widest uppercase text-amber-300">
+              <span className="block text-xs font-medium tracking-widest uppercase text-green-600">
                 <Link to="/blogTwo"> সাদা কাপড় </Link>
               </span>
-              <h2 className="text-xl text-amber-300 font-semibold tracking-wide">
+              <h2 className="text-xl text-green-600 font-semibold tracking-wide">
                 <Link to="/blogTwo"> যেভাবে ধোবেন </Link>
               </h2>
             </div>
             <p className="text-black">
-              সাদা পোশাক পরতে কমবেশি সবাই পছন্দ করেন। সাদা পোশাকে ময়লাও হয় খুব
+              কমবেশি সবাই সাদা পোশাক পরতে  পছন্দ করেন ,ময়লাও হয় খুব
               তাড়াতাড়ি। সাদা কাপড় ধোয়ার নিয়ম চলুন জেনে নিই-
             </p>
           </div>
@@ -78,17 +79,15 @@ const Blog = () => {
               className="object-cover object-center w-full rounded-md h-72 dark:bg-gray-500"
             />
             <div className="mt-6 mb-2">
-              <span className="block text-xs font-medium tracking-widest uppercase text-amber-500">
+              <span className="block text-xs font-medium tracking-widest uppercase text-green-600">
                 <Link to="/blogThree"> গরমে আরাম </Link>
               </span>
-              <h2 className="text-xl text-amber-500 font-semibold tracking-wide">
+              <h2 className="text-xl text-green-600 font-semibold tracking-wide">
                 <Link to="/blogThree"> পাবেন যে কাপড়ে </Link>
               </h2>
             </div>
             <p className="text-black">
-              গ্রীষ্মের ফ্যাশনের ক্ষেত্রে সবচেয়ে বড় লক্ষ্য হলো গরম আবহাওয়ায়
-              শীতল এবং আরামদায়ক থাকা। এখানে বিবেচনা করার জন্য আরও কিছু বিশদ
-              টিপস আপনাদের জন্য দেওয়া হলো:
+            গ্রীষ্মকালের ক্ষেত্রে সবচেয়ে বড় লক্ষ হচ্ছে গরম আবহাওয়া শীতল, আরামদায়ক ও ফ্যাশনেবল পোশাক পড়া চলুন জেনে নেই টিপসগুলো:
             </p>
           </div>
 
@@ -100,16 +99,16 @@ const Blog = () => {
               className="object-cover object-center w-full rounded-md h-72 dark:bg-gray-500"
             />
             <div className="mt-6 mb-2">
-              <span className="block text-xs font-medium tracking-widest uppercase text-amber-500">
+              <span className="block text-xs font-medium tracking-widest uppercase text-green-600">
                 <Link to="/blogFour"> শীতের কাপড় </Link>
               </span>
-              <h2 className="text-xl text-amber-500 font-semibold tracking-wide">
+              <h2 className="text-xl text-green-600 font-semibold tracking-wide">
                 <Link to="/blogFour"> যেভাবে সংরক্ষণ করতে হবে </Link>
               </h2>
             </div>
             <p className="text-black">
-              শীত শেষে সবচেয়ে বড় সমস্যা হয়ে দাড়ায় কাপড়গুলো আবার এক বছরের জন্য
-              গুছিয়ে রাখা। গুছিয়ে রাখার সঠিক নিয়ম চলুন জেনে নেই
+            শীতের জামাকাপড় সঠিকভাবে সংরক্ষণ করা , জামাকাপড় ভাল অবস্থায় রাখতে এবং ঠান্ডা মাস ফিরে আসার জন্য ব্যবহারের জন্য প্রস্তুত রাখতে সাহায্য করতে পারে। 
+            শীতের পোশাক সংরক্ষণ করার জন্য এখানে কিছু পদক্ষেপ অনুসরণ করতে পারেন:
             </p>
           </div>
         </div>

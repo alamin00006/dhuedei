@@ -39,11 +39,11 @@ const Blog = () => {
             className="object-cover object-center w-full rounded-md h-72 dark:bg-gray-500"
           />
           <div className="mt-6 mb-2">
-            <span className="block text-xs font-medium tracking-widest uppercase text-amber-300">
+            <span className="block text-xs font-medium tracking-widest uppercase text-green-600">
             <Link to="/blogOne">		কাপড়ের দুর্গন্ধ  </Link>
 		
             </span>
-            <h2 className="text-xl text-amber-300 font-semibold tracking-wide">
+            <h2 className="text-xl text-green-600 font-semibold tracking-wide">
             <Link to="/blogOne">	দূর করার সহজ উপায়  </Link>
 
             </h2>
@@ -62,10 +62,10 @@ const Blog = () => {
             className="object-cover object-center w-full rounded-md h-72 dark:bg-gray-500"
           />
           <div className="mt-6 mb-2">
-            <span  className="block text-xs font-medium tracking-widest uppercase text-amber-300"><Link to="/blogTwo">	সাদা কাপড় </Link>
+            <span  className="block text-xs font-medium tracking-widest uppercase text-green-600"><Link to="/blogTwo">	সাদা কাপড় </Link>
 	
             </span>
-            <h2 className="text-xl text-amber-300 font-semibold tracking-wide">
+            <h2 className="text-xl text-green-600 font-semibold tracking-wide">
             <Link to="/blogTwo">	যেভাবে ধোবেন </Link>
 			
             </h2>
@@ -84,11 +84,11 @@ const Blog = () => {
             className="object-cover object-center w-full rounded-md h-72 dark:bg-gray-500"
           />
           <div className="mt-6 mb-2">
-            <span className="block text-xs font-medium tracking-widest uppercase text-amber-500">
+            <span className="block text-xs font-medium tracking-widest uppercase text-green-600">
             <Link to="/blogThree">	গরমে আরাম  </Link>
 			
             </span>
-            <h2 className="text-xl text-amber-500 font-semibold tracking-wide">
+            <h2 className="text-xl text-green-600 font-semibold tracking-wide">
                 <Link to="/blogThree">		পাবেন যে কাপড়ে </Link>
 		
             </h2>
@@ -107,12 +107,12 @@ const Blog = () => {
             className="object-cover object-center w-full rounded-md h-72 dark:bg-gray-500"
           />
           <div className="mt-6 mb-2">
-            <span className="block text-xs font-medium tracking-widest uppercase text-amber-500">
+            <span className="block text-xs font-medium tracking-widest uppercase text-green-600">
             <Link to="/blogFour">		শীতের কাপড়  </Link>
 		
 			
             </span>
-            <h2 className="text-xl text-amber-500 font-semibold tracking-wide">
+            <h2 className="text-xl text-green-600 font-semibold tracking-wide">
             <Link to="/blogFour">			যেভাবে সংরক্ষণ করতে হবে  </Link>
 		
             </h2>

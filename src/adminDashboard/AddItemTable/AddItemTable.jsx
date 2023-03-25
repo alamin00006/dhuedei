@@ -48,8 +48,8 @@ const AddItemTable = () => {
                     </label>
                   </div>
 
-                  <div>
-                    <label htmlFor="deletemodal" className="">
+                  <div onChange={()=>setDeleteItem(item)}>
+                    <label htmlFor="delete-item-modal" className="">
                       <RiDeleteBin6Line className="h-6 w-6 cursor-pointer" />
                     </label>
                   </div>
@@ -58,6 +58,7 @@ const AddItemTable = () => {
             </tr>
           ))}
            <ItemEditModal refetch={refetch} editHotel={editItem} />
+           <ItemEditModal refetch={refetch} deleteItem={deleteItem} />
              
         </tbody>
       </table>

@@ -2,7 +2,7 @@ import axios from 'axios';
 import React from 'react';
 import { toast, ToastContainer } from 'react-toastify';
 
-const ItemEditModal = ({editItem, refetch }) => {
+const ItemEditModal = ({refetch }) => {
     const handleEditItem =async(event)=>{
         event.preventDefault();
 

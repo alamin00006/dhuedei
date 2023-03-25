@@ -14,12 +14,6 @@ const Dashboard = () => {
   const [user, setUser] = useState({});
   const token = localStorage.getItem("token");
 
-  // useEffect(() => {
-  //   if (user.role === "User") {
-  //     return navigate("/");
-  //   }
-  // }, [token, user, navigate]);
-
   const { isLoading, refetch } = useQuery([token], () => {
     async function getUser() {
       if (!token) {
@@ -43,7 +37,7 @@ const Dashboard = () => {
           })
           .catch((err) => {
             localStorage.removeItem("token");
-            navigate("/login");
+            navigate("/");
           });
       }
     }

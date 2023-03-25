@@ -27,7 +27,7 @@ const useUser = () => {
           .then((data) => setUser(data?.data?.data))
           .catch((err) => {
             localStorage.removeItem("token");
-            navigate("/login");
+            navigate("/");
           });
       }
     }

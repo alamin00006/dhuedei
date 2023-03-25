@@ -8,7 +8,7 @@ const OrderTable = ({ orders, refetch }) => {
   const [orderView, setOrderView] = useState({});
   const [orderDelete, setOrderDelete] = useState({});
   const adminOrders = orders?.data;
-  // console.log(orderDelete);
+ 
   return (
     <div className="">
       <table className="table w-full border-solid border-2 border-black text-black">
@@ -28,7 +28,7 @@ const OrderTable = ({ orders, refetch }) => {
               <th>{index + 1}</th>
               <td>{order?.name}</td>
               <td>{order?.mobileNumber}</td>
-              <td>{order?.orderDate}</td>
+              <td>{order?.orderDate?.split('T')?.[0]}</td>
               <td>
                 <div className="flex space-x-4">
                   <div onClick={() => setOrderView(order)}>

@@ -84,7 +84,7 @@ const Login = () => {
           <div className=" flex justify-center">
             <form onSubmit={handleSubmit} className="login-form">
               <div>
-                <label className="mt-2" htmlFor="email">
+                <label className="mt-2 text-black" htmlFor="email">
                   Email
                 </label>
                 <input
@@ -101,7 +101,7 @@ const Login = () => {
                   <p className="text-rose-500">{error.emailError}</p>
                 )}
 
-                <label className="mt-2" htmlFor="password">
+                <label className="mt-2 text-black" htmlFor="password">
                   Password
                 </label>
                 <input

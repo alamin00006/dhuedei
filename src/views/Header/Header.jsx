@@ -163,27 +163,29 @@ const Header = () => {
               ORDER
             </Link>
           </div>
-          <div class="vl"></div>
-          <div class="vl ml-5"></div>
-          <div>
-            <FaFacebookF
+          <div class="vl hidden xl:block lg:block md:block sm:block"></div>
+          <div class="vl ml-5 hidden xl:block lg:block md:block sm:block"></div>
+          <div className="hidden xl:block lg:block md:block sm:block">
+             <a href="https://www.facebook.com/Dhuenin?mibextid=ZbWKwL">
+             <FaFacebookF
               title="Follow on Facebook"
               className="h-5 w-6 mx-2 text-slate-400 hover:text-black hover:cursor-pointer"
             />
+             </a>
           </div>
-          <div>
+          <div className="hidden xl:block lg:block md:block sm:block">
             <IoLogoInstagram
               title="Follow on Instagram"
               className="h-6 w-6 mx-1 text-slate-400 hover:text-black hover:cursor-pointer"
             />
           </div>
-          <div>
+          <div className="hidden xl:block lg:block md:block sm:block">
             <AiFillLinkedin
               title="Follow on Linkedin"
               className="h-6 w-6 mx-1 text-slate-400 hover:text-black hover:cursor-pointer"
             />
           </div>
-          <div>
+          <div className="hidden xl:block lg:block md:block sm:block">
             <AiFillYoutube
               title="Follow on Youtube"
               className="h-6 w-6 mx-1 text-slate-400 hover:text-black hover:cursor-pointer"

@@ -8,11 +8,12 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import "swiper/css/autoplay";
 import "./Banner.css";
+
 // import required modules
 import { Pagination, Navigation, Autoplay } from "swiper";
-import banner1 from "../../images/banner1.jpg";
-import banner2 from "../../images/banner2.jpg";
-import banner3 from "../../images/banner3.jpg";
+import banner1 from "../../images/banner1.png";
+import banner2 from "../../images/banner2.png";
+// import banner3 from "../../images/banner3.jpg";
 const Banner = () => {
   return (
     <div>
@@ -39,11 +40,11 @@ const Banner = () => {
               <img className="w-full" src={banner2} alt="" />
             </div>
           </SwiperSlide>
-          <SwiperSlide>
+          {/* <SwiperSlide>
             <div className="flex justify-center">
               <img className="w-full" src={banner3} alt="" />
             </div>
-          </SwiperSlide>
+          </SwiperSlide> */}
         </Swiper>
       </div>
     </div>

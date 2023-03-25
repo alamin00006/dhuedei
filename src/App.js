@@ -7,14 +7,21 @@ import Home from "./components/Home/Home";
 import Navbar from "./components/Navbar/Navbar";
 import AboutUs from "./views/About/AboutUs";
 import Blog from "./views/Blog/Blog";
+import BlogFour from "./views/Blog/BlogFour";
+import BlogOne from "./views/Blog/BlogOne";
+import BlogThree from "./views/Blog/BlogThree";
+import BlogTwo from "./views/Blog/BlogTwo";
 import CopyRight from "./views/CopyRight/CopyRight";
+import Error from "./views/Error/Error";
 import Footer from "./views/Footer/Footer";
 import Gallery from "./views/Gallery/Gallery";
 import Header from "./views/Header/Header";
+import Login from "./views/Login/Login";
 
 import News from "./views/News/News";
 import Order from "./views/Order/Order";
 import Services from "./views/Services/Services";
+// import SignUp from "./views/SignUp/SignUp";
 
 function App() {
   return (
@@ -27,12 +34,19 @@ function App() {
         <Route path="/gallery" element={<Gallery />}></Route>
         <Route path="/news" element={<News />}></Route>
         <Route path="/blog" element={<Blog />}></Route>
+        <Route path="/blogOne" element={<BlogOne></BlogOne>}></Route>
+        <Route path="/blogTwo" element={<BlogTwo></BlogTwo>}></Route>
+        <Route path="/blogThree" element={<BlogThree></BlogThree>}></Route>
+        <Route path="/blogFour" element={<BlogFour></BlogFour>}></Route>
         <Route path="/about" element={<AboutUs />}></Route>
         <Route path="/order" element={<Order />}></Route>
+        {/* <Route path="/singUp" element={<SignUp />}></Route> */}
+        <Route path="/admin" element={<Login />}></Route>
         <Route path="/dashboard" element={<Dashboard />}>
           <Route index element={<ItemManage></ItemManage>} />
           <Route path="order-manage" element={<OrderManage></OrderManage>} />
         </Route>
+        <Route path="*" element={<Error />} />
       </Routes>
       <Footer />
       <CopyRight />

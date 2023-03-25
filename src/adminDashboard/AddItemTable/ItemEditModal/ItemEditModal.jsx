@@ -1,7 +1,6 @@
 import axios from "axios";
 import React from "react";
 import { toast, ToastContainer } from "react-toastify";
-import Loading from "../../../views/Loading/Loading";
 
 const ItemEditModal = ({ editItem, refetch }) => {
   const handleEditItem = async (event) => {
@@ -28,13 +27,11 @@ const ItemEditModal = ({ editItem, refetch }) => {
 
     event.target.reset();
   };
-  console.log(editItem);
-  if (!editItem) {
-    return <Loading></Loading>;
-  }
+  // console.log(editItem);
+
   return (
     <div>
-      <input type="checkbox" id="my-modal-6" className="modal-toggle" />
+      <input type="checkbox" id="my-itemedit-modal" className="modal-toggle" />
       <div className="modal modal-bottom sm:modal-middle">
         <div className="modal-box">
           <h3 className="font-bold text-lg">Item input</h3>
@@ -44,36 +41,39 @@ const ItemEditModal = ({ editItem, refetch }) => {
               <input
                 type="text"
                 style={{ width: "100%", height: "40px" }}
-                className="border rounded mt-2  pl-3 text-rose-800"
+                className="border rounded mt-2  pl-3 "
                 name="itemName"
-                defaultValue={editItem?.itemName ? editItem.itemName : ""}
+                defaultValue={editItem?.itemName}
               />
               <label className="text-black">Iron Price</label>
               <input
                 type="text"
                 style={{ width: "100%", height: "40px" }}
-                className="border rounded mt-2 text-black pl-3"
+                className="border rounded mt-2  pl-3"
                 name="ironPerPrice"
+                defaultValue={editItem.ironPerPrice}
               />
               <label className="text-black">Wash Price</label>
               <input
                 type="text"
                 style={{ width: "100%", height: "40px" }}
-                className="border rounded mt-2 text-black pl-3"
+                className="border rounded mt-2  pl-3"
                 name="washPerPrice"
+                defaultValue={editItem.washPerPrice}
               />
               <label className="text-black">Dry Clean Price</label>
               <input
                 type="text"
                 style={{ width: "100%", height: "40px" }}
-                className="border rounded mt-2 text-black pl-3"
+                className="border rounded mt-2  pl-3"
                 name="dryCleanPerPrice"
+                defaultValue={editItem.dryCleanPerPrice}
               />
             </div>
             <div className="flex items-center justify-end">
               <div className="modal-action">
                 <label
-                  htmlFor="my-modal-6"
+                  htmlFor="my-itemedit-modal"
                   className="bg-black px-5 py-3 rounded-lg cursor-pointer font-bold text-white"
                 >
                   CANCEL

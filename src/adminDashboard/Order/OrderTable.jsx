@@ -1,11 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 import { AiOutlineEye } from "react-icons/ai";
 import { RiDeleteBin6Line } from "react-icons/ri";
+import OrderDeleteModal from "./OrderDeleteModal/OrderDeleteModal";
+import OrderViewModal from "./orderViewModal/OrderViewModal";
 
-const OrderTable = () => {
+const OrderTable = ({ orders }) => {
+  const [orderView, setOrderView] = useState({});
+  const [orderDelete, setOrderDelete] = useState({});
+  const adminOrders = orders?.data;
+  // console.log(orderDelete);
   return (
     <div className="overflow-x-auto">
-      <table className="table w-full border-solid border-2 border-black text-black">
+      <table className="table w-full border-solid border-2 border-black text-black m-32">
         {/* head */}
         <thead>
           <tr className="text-white">
@@ -19,39 +25,34 @@ const OrderTable = () => {
           </tr>
         </thead>
         <tbody>
-          {/* row 1 */}
-          <tr>
-            <th>1</th>
-            <td>Cy Ganderton</td>
-            <td>Quality Control Specialist</td>
-            <td>Blue</td>
-            <td>Blue</td>
-            <td>Blue</td>
-            <td>
-              <div className="flex space-x-4">
-                <div>
-                  <label htmlFor="view-house-modal" className="">
-                    <AiOutlineEye className="h-6 w-6 cursor-pointer" />
-                  </label>
-                </div>
+          {adminOrders.map((order, index) => (
+            <tr key={order._id}>
+              <th>{index + 1}</th>
+              <td>{order?.name}</td>
+              <td>{order?.mobileNumber}</td>
+              <td>{order?.orderDate}</td>
+              <td>{order?.fullAddress}</td>
+              <td>Blue</td>
+              <td>
+                <div className="flex space-x-4">
+                  <div onClick={() => setOrderView(order)}>
+                    <label htmlFor="view-order-modal" className="">
+                      <AiOutlineEye className="h-6 w-6 cursor-pointer" />
+                    </label>
+                  </div>
 
-                <div>
-                  <label htmlFor="deletemodal" className="">
-                    <RiDeleteBin6Line className="h-6 w-6 cursor-pointer" />
-                  </label>
+                  <div onClick={() => setOrderDelete(order)}>
+                    <label htmlFor="delete-order-modal" className="">
+                      <RiDeleteBin6Line className="h-6 w-6 cursor-pointer" />
+                    </label>
+                  </div>
                 </div>
-              </div>
-            </td>
-          </tr>
-          {/* row 2 */}
-          <tr>
-            <th>2</th>
-            <td>Hart Hagerty</td>
-            <td>Desktop Support Technician</td>
-            <td>Purple</td>
-            <td>Purple</td>
-            <td>Purple</td>
-          </tr>
+              </td>
+            </tr>
+          ))}
+
+          <OrderViewModal orderView={orderView}></OrderViewModal>
+          <OrderDeleteModal orderDelete={orderDelete}></OrderDeleteModal>
         </tbody>
       </table>
     </div>

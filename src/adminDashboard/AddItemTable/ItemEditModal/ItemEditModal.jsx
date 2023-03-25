@@ -13,16 +13,16 @@ const ItemEditModal = ({ editItem, refetch }) => {
       dryCleanPerPrice: event.target.dryCleanPerPrice.value,
     };
     try {
-      const data = await axios.post(
-        "https://dhuenin-server-side.onrender.com/api/v1/item",
+      const data = await axios.patch(
+        `https://dhuenin-server-side.onrender.com/api/v1/item/${editItem?._id}`,
         productEdit
       );
 
-      toast.success(data.data.message);
+      toast.success(data?.data?.message);
       refetch();
     } catch (error) {
       console.log(error);
-      return toast.warn(error.response.data.message);
+      return toast.warn(error?.response?.data?.message);
     }
 
     event.target.reset();
@@ -34,7 +34,7 @@ const ItemEditModal = ({ editItem, refetch }) => {
       <input type="checkbox" id="my-itemedit-modal" className="modal-toggle" />
       <div className="modal modal-bottom sm:modal-middle">
         <div className="modal-box">
-          <h3 className="font-bold text-lg">Item input</h3>
+          <h3 className="font-bold text-lg">Item Update</h3>
           <form onSubmit={handleEditItem}>
             <div>
               <label className="text-black">Item Name</label>
@@ -80,17 +80,13 @@ const ItemEditModal = ({ editItem, refetch }) => {
                 </label>
               </div>
               <div className="mt-6">
-                <input
-                  className="bg-rose-500 px-5 py-3 rounded-lg cursor-pointer font-bold text-white"
-                  type="submit"
-                  value="ITEM ADD"
-                />
+                <button type="submit" className="bg-rose-500 px-5 py-3 rounded-lg cursor-pointer font-bold text-white">ITEM UPDATE</button>
               </div>
             </div>
           </form>
         </div>
       </div>
-      <ToastContainer />
+      {/* <ToastContainer className="toast-position" position="top-center"/> */}
     </div>
   );
 };

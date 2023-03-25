@@ -2,14 +2,12 @@ import React, { useState } from "react";
 import { AiOutlineEye } from "react-icons/ai";
 import { FiEdit } from "react-icons/fi";
 import { RiDeleteBin6Line } from "react-icons/ri";
-import useItems from "../../hooks/useItems";
 import "./AddTable.css";
 import ItemDeleteModal from "./ItemDeleteModal/ItemDeleteModal";
 import ItemEditModal from "./ItemEditModal/ItemEditModal";
 import ItemViewModal from "./ItemViewModal/ItemViewModal";
 
-const AddItemTable = () => {
-  const [items, refetch] = useItems();
+const AddItemTable = ({items,refetch}) => {
   const [editItem, setEditItem] = useState({});
   const [detailsItem, setDetailsItem] = useState({});
   const [deleteItem, setDeleteItem] = useState({});
@@ -60,8 +58,8 @@ const AddItemTable = () => {
             </tr>
           ))}
           <ItemViewModal detailsItem={detailsItem}></ItemViewModal>
-          <ItemEditModal editItem={editItem} />
-          <ItemDeleteModal deleteItem={deleteItem}></ItemDeleteModal>
+          <ItemEditModal editItem={editItem} refetch={refetch}/>
+          <ItemDeleteModal deleteItem={deleteItem} refetch={refetch}></ItemDeleteModal>
         </tbody>
       </table>
     </div>

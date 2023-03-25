@@ -1,6 +1,6 @@
+import axios from "axios";
 import React from "react";
 
-import axios from "axios";
 import { toast, ToastContainer } from "react-toastify";
 import Services from "../Services/Services";
 const Order = () => {
@@ -18,8 +18,7 @@ const Order = () => {
         `https://dhuenin-server-side.onrender.com/api/v1/order`,
         orderData
       );
-
-      toast.success(data.data.message);
+      toast.success("Thanks For Order, We Will Contact Soon");
     } catch (error) {
       return toast.warn(error.response.data.message);
     }
@@ -82,7 +81,7 @@ const Order = () => {
          <Services/>
         </div>
       </div>
-      <ToastContainer />
+      <ToastContainer className="toast-position" position="top-center"/>
     </div>
   );
 };

@@ -12,17 +12,17 @@ const Footer = () => {
         <div className="hidden md:block">
           <Map></Map>
         </div>
-        <div className=" flex   ml-8 text-black">
+        <div className=" flex ml-8 text-black">
           <div className="">
             <h2 className="text-2xl font-bold">Quick Links</h2>
             <ul>
               <li className="mt-2">
-                <Link to="" className="font-medium text-lg">
+                <Link to="/about" className="font-medium text-lg">
                   About Us
                 </Link>
               </li>
               <li className="mt-2">
-                <Link to="" className="font-medium text-lg">
+                <Link to="/blog" className="font-medium text-lg">
                   Blog
                 </Link>
               </li>

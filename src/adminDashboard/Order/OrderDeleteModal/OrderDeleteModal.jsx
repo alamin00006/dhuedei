@@ -1,7 +1,26 @@
 import React from "react";
+import axios from "axios";
+import { toast, ToastContainer } from "react-toastify";
+const OrderDeleteModal = ({ orderDelete, refetch }) => {
+  const handleDelete = async () => {
+    try {
+      const data = await axios.delete(
+        `https://dhuenin-server-side.onrender.com/api/v1/order/${orderDelete?._id}`,
+        {},
+        {
+          headers: {
+            "Content-Type": "application/json",
+          },
+        }
+      );
 
-const OrderDeleteModal = ({ orderDelete }) => {
-  console.log(orderDelete);
+      toast.success(data.data.message);
+      refetch();
+    } catch (error) {
+      return toast.error(error.response.data.message);
+    }
+    
+  };
   return (
     <div>
       <input type="checkbox" id="delete-order-modal" className="modal-toggle" />
@@ -14,7 +33,7 @@ const OrderDeleteModal = ({ orderDelete }) => {
                 Cancel
               </label>
             </div>
-            <div className="modal-action">
+            <div onClick={handleDelete} className="modal-action">
               <label htmlFor="delete-order-modal" className="btn">
                 Yes
               </label>
@@ -22,6 +41,7 @@ const OrderDeleteModal = ({ orderDelete }) => {
           </div>
         </div>
       </div>
+      {/* <ToastContainer className="toast-position" position="top-center"/> */}
     </div>
   );
 };

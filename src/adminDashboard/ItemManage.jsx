@@ -6,10 +6,10 @@ import ItemAddModal from "./ItemAddModal";
 
 const ItemManage = () => {
   const [items, refetch] = useItems();
-  console.log(items);
+  
   return (
     <div>
-      <h1>
+      <h1 className="mb-6">
         <label
           htmlFor="my-modal-6"
           className="bg-rose-500 px-5 py-3 rounded-lg cursor-pointer font-bold text-white"
@@ -19,7 +19,7 @@ const ItemManage = () => {
       </h1>
       <ItemAddModal refetch={refetch} />
       {items ? (
-        <AddItemTable items={items}></AddItemTable>
+        <AddItemTable items={items} refetch={refetch}></AddItemTable>
       ) : (
         <Loading></Loading>
       )}

@@ -6,7 +6,7 @@ const ItemDeleteModal = ({ deleteItem, refetch }) => {
   const handleDelete = async () => {
     try {
       const data = await axios.delete(
-        "https://dhuenin-server-side.onrender.com/api/v1/item",
+        `https://dhuenin-server-side.onrender.com/api/v1/item/${deleteItem?._id}`,
         {},
         {
           headers: {
@@ -20,6 +20,7 @@ const ItemDeleteModal = ({ deleteItem, refetch }) => {
     } catch (error) {
       return toast.error(error.response.data.message);
     }
+    
   };
   // console.log(deleteItem);
   return (

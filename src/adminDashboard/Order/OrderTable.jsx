@@ -4,23 +4,22 @@ import { RiDeleteBin6Line } from "react-icons/ri";
 import OrderDeleteModal from "./OrderDeleteModal/OrderDeleteModal";
 import OrderViewModal from "./orderViewModal/OrderViewModal";
 
-const OrderTable = ({ orders }) => {
+const OrderTable = ({ orders,refetch }) => {
   const [orderView, setOrderView] = useState({});
   const [orderDelete, setOrderDelete] = useState({});
   const adminOrders = orders?.data;
   // console.log(orderDelete);
   return (
-    <div className="overflow-x-auto">
-      <table className="table w-full border-solid border-2 border-black text-black m-32">
+    <div className="">
+      <table className="table border-solid border-2 border-black text-black">
         {/* head */}
         <thead>
           <tr className="text-white">
-            <th></th>
+            
+            <th>No</th>
             <th>Name</th>
             <th>Phone Number</th>
             <th>Date</th>
-            <th>Address</th>
-            <th>Order Note</th>
             <th>Action</th>
           </tr>
         </thead>
@@ -31,8 +30,6 @@ const OrderTable = ({ orders }) => {
               <td>{order?.name}</td>
               <td>{order?.mobileNumber}</td>
               <td>{order?.orderDate}</td>
-              <td>{order?.fullAddress}</td>
-              <td>Blue</td>
               <td>
                 <div className="flex space-x-4">
                   <div onClick={() => setOrderView(order)}>
@@ -52,7 +49,7 @@ const OrderTable = ({ orders }) => {
           ))}
 
           <OrderViewModal orderView={orderView}></OrderViewModal>
-          <OrderDeleteModal orderDelete={orderDelete}></OrderDeleteModal>
+          <OrderDeleteModal orderDelete={orderDelete} refetch={refetch}></OrderDeleteModal>
         </tbody>
       </table>
     </div>

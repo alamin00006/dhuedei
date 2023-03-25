@@ -2,6 +2,7 @@ import React from "react";
 
 const OrderViewModal = ({ orderView }) => {
   console.log(orderView);
+
   return (
     <div>
       <input type="checkbox" id="view-order-modal" className="modal-toggle" />

@@ -13,13 +13,13 @@ const Header = () => {
         <h2>Mobile: +8801886209320</h2>
       </div>
       <div className="w-full md:w-11/12 m-0 mx-auto sticky top-0 z-50 ">
-        <div className="navbar bg-base-100     shadow-lg shadow-white-500/50">
+        <div className="navbar bg-base-100 shadow-lg shadow-white-500/50">
           <div className="navbar-start">
             <div className="dropdown">
               <label tabIndex={0} className=" lg:hidden">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="h-5 w-5"
+                  className="h-5 w-5 text-black"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -37,74 +37,73 @@ const Header = () => {
                 className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
               >
                 <li>
-                  <Link
+                  <NavLink
                     to="/"
-                    className="text-base px-3 text-black font-normal rounded-full py-2"
+                    className=" px-3 text-black font-normal rounded-full py-2"
                   >
-                    Home
-                  </Link>
+                    HOME
+                  </NavLink>
                 </li>
                 <li>
-                  <Link
+                  <NavLink
                     to="/services"
-                    className="text-base px-3 text-black font-normal rounded-full py-2"
+                    className=" px-3 text-black font-normal rounded-full py-2"
                   >
                     SERVICES
-                  </Link>
+                  </NavLink>
                 </li>
                 <li>
-                  <Link
+                  <NavLink
                     to="/gallery"
-                    className="text-base px-3 text-black font-normal rounded-full py-2"
+                    className="text-base px-3 text-black font-normal rounded-full py-2 "
                   >
                     GALLERY
-                  </Link>
+                  </NavLink>
                 </li>
                 <li>
-                  <Link
+                  <NavLink
                     to="/news"
                     className="text-base px-3 text-black font-normal rounded-full py-2"
                   >
                     NEWS
-                  </Link>
+                  </NavLink>
                 </li>
                 <li>
-                  <Link
+                  <NavLink
                     to="/blog"
                     className="text-base px-3 text-black font-normal rounded-full py-2"
                   >
                     BLOG
-                  </Link>
+                  </NavLink>
                 </li>
-                {/* <li>
-                <Link
-                  to="/about"
-                  className="text-base px-3 text-black font-normal rounded-full py-2"
-                >
-                  ABOUTUS
-                </Link>
-              </li> */}
                 <li>
                   <Link
+                    to="/about"
+                    className="text-base px-3 text-black font-normal rounded-full py-2"
+                  >
+                    ABOUT US
+                  </Link>
+                </li>
+                <li>
+                  <NavLink
                     to="/order"
                     className=" px-4 bg-rose-500 text-white font-normal rounded-full py-2"
                   >
                     ORDER
-                  </Link>
+                  </NavLink>
                 </li>
               </ul>
             </div>
             <Link to="/" className=" text-xl">
               <img className="w-28 h-21" src={logo} alt="" />
             </Link>
-            {/* <a className="btn btn-ghost normal-case text-xl">daisyU</a> */}
           </div>
           <div className="navbar-center hidden lg:flex">
-            <ul className="menu menu-horizontal px-1">
+            <ul className="menu-horizontal px-1">
               <li>
                 <NavLink
                   to="/"
-                  className="text-base px-3 text-black font-normal rounded-full py-2"
+                  className=" px-3 text-black font-normal rounded-full py-2 "
                 >
                   HOME
                 </NavLink>
@@ -112,7 +111,7 @@ const Header = () => {
               <li>
                 <NavLink
                   to="/services"
-                  className="text-base px-3 text-black font-normal rounded-full py-2"
+                  className=" px-3 text-black font-normal rounded-full py-2"
                 >
                   SERVICES
                 </NavLink>
@@ -120,7 +119,7 @@ const Header = () => {
               <li>
                 <NavLink
                   to="/gallery"
-                  className="text-base px-3 text-black font-normal rounded-full py-2"
+                  className=" px-3 text-black font-normal rounded-full py-2"
                 >
                   GALLERY
                 </NavLink>
@@ -128,7 +127,7 @@ const Header = () => {
               <li>
                 <NavLink
                   to="/news"
-                  className="text-base px-3 text-black font-normal rounded-full py-2"
+                  className=" px-3 text-black font-normal rounded-full py-2"
                 >
                   NEWS
                 </NavLink>
@@ -136,19 +135,19 @@ const Header = () => {
               <li>
                 <NavLink
                   to="/blog"
-                  className="text-base px-3 text-black font-normal rounded-full py-2"
+                  className="px-3 text-black font-normal rounded-full py-2"
                 >
                   BLOG
                 </NavLink>
               </li>
-              {/* <li>
-              <NavLink
-                to="/about"
-                className="text-base px-3 text-black font-normal rounded-full py-2"
-              >
-                ABOUTUS
-              </NavLink>
-            </li> */}
+              <li>
+                <NavLink
+                  to="/about"
+                  className="text-base px-3 text-black font-normal rounded-full py-2"
+                >
+                  ABOUT US
+                </NavLink>
+              </li>
               <li>
                 <Link
                   to="/order"
@@ -168,27 +167,29 @@ const Header = () => {
                 ORDER
               </Link>
             </div>
-            <div class="vl "></div>
-            <div class="vl ml-5 "></div>
-            <div>
-              <FaFacebookF
-                title="Follow on Facebook"
-                className="h-5 w-6 mx-2 text-slate-400 hover:text-black hover:cursor-pointer"
-              />
+            <div class="vl hidden xl:block lg:block md:block sm:block"></div>
+            <div class="vl ml-5 hidden xl:block lg:block md:block sm:block"></div>
+            <div className="hidden xl:block lg:block md:block sm:block">
+              <a href="https://www.facebook.com/Dhuenin?mibextid=ZbWKwL">
+                <FaFacebookF
+                  title="Follow on Facebook"
+                  className="h-5 w-6 mx-2 text-slate-400 hover:text-black hover:cursor-pointer"
+                />
+              </a>
             </div>
-            <div>
+            <div className="hidden xl:block lg:block md:block sm:block">
               <IoLogoInstagram
                 title="Follow on Instagram"
                 className="h-6 w-6 mx-1 text-slate-400 hover:text-black hover:cursor-pointer"
               />
             </div>
-            <div>
+            <div className="hidden xl:block lg:block md:block sm:block">
               <AiFillLinkedin
                 title="Follow on Linkedin"
                 className="h-6 w-6 mx-1 text-slate-400 hover:text-black hover:cursor-pointer"
               />
             </div>
-            <div>
+            <div className="hidden xl:block lg:block md:block sm:block">
               <AiFillYoutube
                 title="Follow on Youtube"
                 className="h-6 w-6 mx-1 text-slate-400 hover:text-black hover:cursor-pointer"

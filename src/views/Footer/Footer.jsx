@@ -50,13 +50,13 @@ const Footer = () => {
               <div>
                 <FaHandsHelping className="w-5 h-5" />
               </div>
-              <p className="ml-1 font-normal">nazmulhasanall92@gmail.com</p>
+              <p className="ml-1 font-normal">support@dhuenin.com</p>
             </div>
             <div className="flex mt-2">
               <div>
                 <TiLocationArrowOutline className="w-6 h-6" />
               </div>
-              <p>Patanish Bajar Hajigonj</p>
+              <p>Model College Road, Hajiganj, Chandpur</p>
             </div>
           </div>
         </div>

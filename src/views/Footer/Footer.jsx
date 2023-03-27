@@ -7,14 +7,14 @@ import { TiLocationArrowOutline } from "react-icons/ti";
 
 const Footer = () => {
   return (
-    <footer className="bg-blue-200	 pt-5 pb-20 mt-10">
+    <footer className="bg-blue-200 pt-5 pb-20 mt-10">
       <div className="flex  lg:mx-44 justify-center">
         <div className="hidden md:block">
           <Map></Map>
         </div>
         <div className=" flex ml-8 text-black">
           <div className="">
-            <h2 className="text-2xl font-bold">Quick Links</h2>
+            <h2 className="text-xl font-bold">Quick Links</h2>
             <ul>
               <li className="mt-2">
                 <Link to="/about" className="font-medium text-lg">
@@ -39,7 +39,7 @@ const Footer = () => {
             </ul>
           </div>
           <div className="ml-16">
-            <h2 className="text-2xl font-bold">Contact Us</h2>
+            <h2 className="text-xl font-bold">Contact Us</h2>
             <div className="flex mt-2 items-center">
               <div>
                 <HiDevicePhoneMobile className="h-5 w-5" />

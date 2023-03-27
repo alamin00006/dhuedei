@@ -9,10 +9,11 @@ const OrderViewModal = ({ orderView }) => {
       <div className="modal">
         <div className="modal-box bg-slate-200">
           <h3 className="font-bold text-lg"> Order view</h3>
-          <h2>Name: {orderView.name}</h2>
-          <h2>Mobile: {orderView.mobileNumber}</h2>
-          <h2>Order Date: {orderView.orderDate}</h2>
-          <h2>Order Note: {orderView.orderNote}</h2>
+          <h2>Name : {orderView.name}</h2>
+          <h2>Mobile : {orderView.mobileNumber}</h2>
+          <h2>Order Date : {orderView.orderDate}</h2>
+          <h2>Order Note : {orderView.orderNote}</h2>
+          <h2>Customer Address : {orderView.fullAddress}</h2>
 
           <div className="flex justify-end">
             <div className="modal-action">

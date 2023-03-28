@@ -42,7 +42,7 @@ const AboutUs = () => {
 					<div className="flex flex-col sm:relative sm:before:absolute sm:before:top-2 sm:before:w-4 sm:before:h-4 sm:before:rounded-full sm:before:left-[-35px] sm:before:z-[1] before:dark:bg-violet-400">
 						<h3 className="text-xl font-semibold tracking-wide text-green-600">আমাদের যাত্রা শুরু যেখান থেকে </h3>
 					
-						<p className="mt-3 text-neutral-800">আমাদের যাত্রা 1 জানুয়ারী  2023 এ শুরু হয়। 
+						<p className="mt-3 text-neutral-800">আমাদের যাত্রা ১ লা জানুয়ারি ২০২৩ এ শুরু হয়েছে| 
              শুরু থেকেই আমরা পরিষেবার মানের ক্ষেত্রে আপসহীন ছিলাম, আছি এবং থাকব।
              আমরা আমাদের গ্রাহকদের সর্বনিম্ন খরচে সর্বোচ্চ মানের সেবা প্রদানের চেষ্টা করি।
             বিশ্বাস করি যে আমাদের নিয়মিত গ্রাহকরা আমাদের পরিষেবারই ফলাফল। 

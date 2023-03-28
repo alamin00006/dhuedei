@@ -55,9 +55,9 @@ const Order = () => {
             placeholder="Select Date"
             required
           />
-          <input
+          <textarea
             type="text"
-            className="input  w-full px-5 shadow-md border border-indigo-200 bg-none my-5  text-black"
+            className="input w-full p-5 h-32 shadow-md border border-indigo-200  my-5 text-black"
             name="fullAddress"
             placeholder="Your Full Address"
           />

@@ -59,7 +59,7 @@ const Header = () => {
               <li>
                 <NavLink
                   to="/news"
-                  className=" px-3 text-black font-normal rounded-full py-2"
+                  className="text-base px-3 text-black font-normal rounded-full py-2"
                 >
                   NEWS
                 </NavLink>
@@ -67,7 +67,7 @@ const Header = () => {
               <li>
                 <NavLink
                   to="/blog"
-                  className="px-3 text-black font-normal rounded-full py-2"
+                  className="text-base px-3 text-black font-normal rounded-full py-2"
                 >
                   BLOG
                 </NavLink>
@@ -93,7 +93,7 @@ const Header = () => {
           <Link to="/" className=" text-xl">
             <img className="w-28 h-21" src={logo} alt="" />
           </Link>
-        </div>
+          </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu-horizontal px-1">
             <li>
@@ -166,12 +166,12 @@ const Header = () => {
           <div class="vl hidden xl:block lg:block md:block sm:block"></div>
           <div class="vl ml-5 hidden xl:block lg:block md:block sm:block"></div>
           <div className="hidden xl:block lg:block md:block sm:block">
-            <a href="https://www.facebook.com/Dhuenin?mibextid=ZbWKwL">
-              <FaFacebookF
-                title="Follow on Facebook"
-                className="h-5 w-6 mx-2 text-slate-400 hover:text-black hover:cursor-pointer"
-              />
-            </a>
+             <a href="https://www.facebook.com/Dhuenin?mibextid=ZbWKwL">
+             <FaFacebookF
+              title="Follow on Facebook"
+              className="h-5 w-6 mx-2 text-slate-400 hover:text-black hover:cursor-pointer"
+            />
+             </a>
           </div>
           <div className="hidden xl:block lg:block md:block sm:block">
             <IoLogoInstagram
